@@ -1,0 +1,214 @@
+body{
+  background-color: rgb(7, 66, 47);
+  background-image: url(./photos/background\ pick.jpeg);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start;
+  
+}
+.navbar{
+  background-color: rgb(6, 68, 87)!important;
+ 
+ 
+}
+
+.top-right-image {
+  position: absolute;
+  right: 0;
+  width: 250px; /* adjust as needed */
+  height: auto;
+}
+.nav-item a:hover{
+  color: greenyellow!important;
+ 
+}
+.nav-item a{
+  color: white!important;
+  font-family: 'Times New Roman', Times, serif;
+}
+.dropdown-menu{
+  background-color: rgb(11, 141, 177);
+}
+.dropdown-menu a:hover{
+color: maroon!important;
+}  
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  animation: headBounce 2s infinite;
+}
+@keyframes headBounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-20px); }
+  50% { transform: translateY(10px); }
+  75% { transform: translateY(-10px); }
+}
+
+.cards-container {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: rgb(15, 48, 89);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-bottom: 40px; /* adjust value as needed */
+  
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #f8eeee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #eef0f0;
+  font-display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.card .price {
+  color: #007bff;
+  font-weight: bold;
+} 
+h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(115, 177, 161);
+}
+.carousel-container {
+  max-height: 40vh; /* Limits height to less than half the page */
+  overflow: hidden;
+  width: 50vw;
+  margin-top: 1rem;
+  height: auto;
+}
+.carousel-item {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  
+}
+img {
+  display: block;
+  margin: 3px;
+  width: 80px;
+  height: 350px;
+}
+.carousel-control-prev {
+  left: 10px;
+}
+.carousel-control-next {
+  right: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.info-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #0a667d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+footer {
+    padding-top: 40px; /* or margin-top */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  footer .bi {
+    transition: transform 0.4s ease, color 0.3s ease;
+  }
+
+ 
+  
+  .bi-facebook:hover {
+    animation: spin 0.6s ease;
+    color: #18eef2; /* Facebook blue */
+  }
+
+  .bi-whatsapp:hover {
+    animation: spin 0.6s ease;
+    color: #08584a; /* Twitter blue */
+  }
+
+  .bi-instagram:hover {
+    animation: spin 0.6s ease;
+    color: #e13030; /* Insta pink */
+  }
+
+  .bi-linkedin:hover {
+    animation: spin 0.6s ease;
+    color: #0012b5; /* LinkedIn blue */
+  }
+
+  .bi-envelope:hover {
+    animation: spin 0.6s ease;
+    color: #dcc935; /* Email red */
+  }
+  footer .bi {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    border-radius: 50%; /* gives them a nice soft edge */
+    padding: 8px; /* creates spacing inside icon for shadow visibility */
+    background-color: #d6d4da; /* optional: white background for better contrast */
+  }
+  footer {
+    margin-top: 50px;
+    text-align: center;
+  }
+ 
+  .fade-section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+  }
+
+  .fade-section.show {
+    display: block !important;
+    opacity: 1;
+  }
+
+  .fade-grid {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade-grid.show {
+    display: grid !important;
+    opacity: 1;
+  }
